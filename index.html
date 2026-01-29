@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Landquiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="card">
+    <h1>Landquiz</h1>
+    <p>Skriv inn land under riktig kontinent. Trykk Enter for å legge til.</p>
+
+    <div class="actions">
+      <button id="resetAll" type="button">Nullstill alt</button>
+      <button id="finishBtn" class="secondary" type="button">Avslutt</button>
+      <span id="totalCounts" class="totalCounts"></span>
+    </div>
+
+    <div id="globalFeedback" class="feedback" aria-live="polite"></div>
+  </header>
+
+  <section id="results" class="card results" hidden>
+    <div class="resultsTop">
+      <h2>Manglende land</h2>
+      <div id="missingTotals" class="muted"></div>
+    </div>
+
+    <div id="missingByContinent"></div>
+
+    <div class="resultsActions">
+      <button id="closeResults" class="secondary" type="button">Skjul</button>
+    </div>
+  </section>
+
+  <main id="continents"></main>
+
+  <template id="continentTpl">
+    <section class="card continent">
+      <div class="top">
+        <h2 class="name"></h2>
+        <div class="counts"></div>
+      </div>
+
+      <input class="input" type="text" inputmode="text" autocomplete="off"
+             placeholder="Skriv et land og trykk Enter…" />
+
+      <div class="feedback" aria-live="polite"></div>
+      <div class="list"></div>
+    </section>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>

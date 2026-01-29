@@ -1,0 +1,169 @@
+* { box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, system-ui, Segoe UI, Roboto, Arial, sans-serif;
+  margin: 0;
+  padding: 16px;
+  background: #f6f7f9;
+  color: #111;
+}
+
+.card {
+  background: white;
+  border-radius: 14px;
+  padding: 14px;
+  margin-bottom: 14px;
+}
+
+h1 {
+  margin: 0 0 6px;
+  font-size: 24px;
+}
+
+p {
+  margin: 0 0 10px;
+  color: #444;
+  font-size: 14px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.totalCounts {
+  font-weight: 800;
+  font-size: 15px;
+}
+
+button {
+  border: 0;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: #111;
+  color: white;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+button.secondary {
+  background: #e9eaee;
+  color: #111;
+}
+
+main {
+  display: grid;
+  gap: 14px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.name {
+  margin: 0;
+  font-size: 20px;
+}
+
+.counts {
+  color: #555;
+  font-size: 14px;
+}
+
+/* INPUT */
+.input {
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.input:disabled {
+  background: #f3f4f6;
+  color: #555;
+}
+
+/* FEEDBACK */
+.feedback {
+  margin-top: 8px;
+  min-height: 20px;
+  font-size: 14px;
+}
+
+.feedback.ok { color: #0a7a2f; }
+.feedback.bad { color: #b00020; }
+
+/* CHIPS */
+.list, .missingList {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #eef2ff;
+  border: 1px solid #dbe2ff;
+  font-size: 14px;
+}
+
+.chip button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  color: #111;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+/* RESULTS */
+.resultsTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.results h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.muted {
+  color: #555;
+  font-size: 14px;
+}
+
+.missingBlock {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px dashed #ddd;
+}
+
+.missingBlock h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
+.resultsActions {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
+
+input, button {
+  -webkit-tap-highlight-color: transparent;
+}
